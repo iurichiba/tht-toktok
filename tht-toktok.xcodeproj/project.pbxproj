@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B11293D6ABD0015F330 /* AppDelegate.swift */; };
+		EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B13293D6ABD0015F330 /* SceneDelegate.swift */; };
+		EE838B16293D6ABD0015F330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B15293D6ABD0015F330 /* ViewController.swift */; };
+		EE838B19293D6ABD0015F330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE838B17293D6ABD0015F330 /* Main.storyboard */; };
+		EE838B1B293D6AC30015F330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE838B1A293D6AC30015F330 /* Assets.xcassets */; };
+		EE838B1E293D6AC30015F330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */; };
+		EE838B29293D6AC40015F330 /* tht_toktokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B28293D6AC40015F330 /* tht_toktokTests.swift */; };
+		EE838B33293D6AC40015F330 /* tht_toktokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B32293D6AC40015F330 /* tht_toktokUITests.swift */; };
+		EE838B35293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B34293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE838B25293D6AC40015F330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE838B06293D6ABD0015F330 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE838B0D293D6ABD0015F330;
+			remoteInfo = "tht-toktok";
+		};
+		EE838B2F293D6AC40015F330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE838B06293D6ABD0015F330 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE838B0D293D6ABD0015F330;
+			remoteInfo = "tht-toktok";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE838B0E293D6ABD0015F330 /* tht-toktok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tht-toktok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE838B11293D6ABD0015F330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE838B13293D6ABD0015F330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE838B15293D6ABD0015F330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE838B18293D6ABD0015F330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE838B1A293D6AC30015F330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE838B1D293D6AC30015F330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE838B1F293D6AC30015F330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE838B24293D6AC40015F330 /* tht-toktokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tht-toktokTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE838B28293D6AC40015F330 /* tht_toktokTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tht_toktokTests.swift; sourceTree = "<group>"; };
+		EE838B2E293D6AC40015F330 /* tht-toktokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tht-toktokUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE838B32293D6AC40015F330 /* tht_toktokUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tht_toktokUITests.swift; sourceTree = "<group>"; };
+		EE838B34293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tht_toktokUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE838B0B293D6ABD0015F330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE838B21293D6AC40015F330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE838B2B293D6AC40015F330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE838B05293D6ABD0015F330 = {
+			isa = PBXGroup;
+			children = (
+				EE838B10293D6ABD0015F330 /* tht-toktok */,
+				EE838B27293D6AC40015F330 /* tht-toktokTests */,
+				EE838B31293D6AC40015F330 /* tht-toktokUITests */,
+				EE838B0F293D6ABD0015F330 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE838B0F293D6ABD0015F330 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE838B0E293D6ABD0015F330 /* tht-toktok.app */,
+				EE838B24293D6AC40015F330 /* tht-toktokTests.xctest */,
+				EE838B2E293D6AC40015F330 /* tht-toktokUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE838B10293D6ABD0015F330 /* tht-toktok */ = {
+			isa = PBXGroup;
+			children = (
+				EE838B11293D6ABD0015F330 /* AppDelegate.swift */,
+				EE838B13293D6ABD0015F330 /* SceneDelegate.swift */,
+				EE838B15293D6ABD0015F330 /* ViewController.swift */,
+				EE838B17293D6ABD0015F330 /* Main.storyboard */,
+				EE838B1A293D6AC30015F330 /* Assets.xcassets */,
+				EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */,
+				EE838B1F293D6AC30015F330 /* Info.plist */,
+			);
+			path = "tht-toktok";
+			sourceTree = "<group>";
+		};
+		EE838B27293D6AC40015F330 /* tht-toktokTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE838B28293D6AC40015F330 /* tht_toktokTests.swift */,
+			);
+			path = "tht-toktokTests";
+			sourceTree = "<group>";
+		};
+		EE838B31293D6AC40015F330 /* tht-toktokUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE838B32293D6AC40015F330 /* tht_toktokUITests.swift */,
+				EE838B34293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift */,
+			);
+			path = "tht-toktokUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE838B0D293D6ABD0015F330 /* tht-toktok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE838B38293D6AC40015F330 /* Build configuration list for PBXNativeTarget "tht-toktok" */;
+			buildPhases = (
+				EE838B0A293D6ABD0015F330 /* Sources */,
+				EE838B0B293D6ABD0015F330 /* Frameworks */,
+				EE838B0C293D6ABD0015F330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tht-toktok";
+			productName = "tht-toktok";
+			productReference = EE838B0E293D6ABD0015F330 /* tht-toktok.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE838B23293D6AC40015F330 /* tht-toktokTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE838B3B293D6AC40015F330 /* Build configuration list for PBXNativeTarget "tht-toktokTests" */;
+			buildPhases = (
+				EE838B20293D6AC40015F330 /* Sources */,
+				EE838B21293D6AC40015F330 /* Frameworks */,
+				EE838B22293D6AC40015F330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE838B26293D6AC40015F330 /* PBXTargetDependency */,
+			);
+			name = "tht-toktokTests";
+			productName = "tht-toktokTests";
+			productReference = EE838B24293D6AC40015F330 /* tht-toktokTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE838B2D293D6AC40015F330 /* tht-toktokUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE838B3E293D6AC40015F330 /* Build configuration list for PBXNativeTarget "tht-toktokUITests" */;
+			buildPhases = (
+				EE838B2A293D6AC40015F330 /* Sources */,
+				EE838B2B293D6AC40015F330 /* Frameworks */,
+				EE838B2C293D6AC40015F330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE838B30293D6AC40015F330 /* PBXTargetDependency */,
+			);
+			name = "tht-toktokUITests";
+			productName = "tht-toktokUITests";
+			productReference = EE838B2E293D6AC40015F330 /* tht-toktokUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE838B06293D6ABD0015F330 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EE838B0D293D6ABD0015F330 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EE838B23293D6AC40015F330 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = EE838B0D293D6ABD0015F330;
+					};
+					EE838B2D293D6AC40015F330 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = EE838B0D293D6ABD0015F330;
+					};
+				};
+			};
+			buildConfigurationList = EE838B09293D6ABD0015F330 /* Build configuration list for PBXProject "tht-toktok" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE838B05293D6ABD0015F330;
+			productRefGroup = EE838B0F293D6ABD0015F330 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE838B0D293D6ABD0015F330 /* tht-toktok */,
+				EE838B23293D6AC40015F330 /* tht-toktokTests */,
+				EE838B2D293D6AC40015F330 /* tht-toktokUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE838B0C293D6ABD0015F330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE838B1E293D6AC30015F330 /* LaunchScreen.storyboard in Resources */,
+				EE838B1B293D6AC30015F330 /* Assets.xcassets in Resources */,
+				EE838B19293D6ABD0015F330 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE838B22293D6AC40015F330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE838B2C293D6AC40015F330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE838B0A293D6ABD0015F330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE838B16293D6ABD0015F330 /* ViewController.swift in Sources */,
+				EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */,
+				EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE838B20293D6AC40015F330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE838B29293D6AC40015F330 /* tht_toktokTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE838B2A293D6AC40015F330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE838B33293D6AC40015F330 /* tht_toktokUITests.swift in Sources */,
+				EE838B35293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE838B26293D6AC40015F330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE838B0D293D6ABD0015F330 /* tht-toktok */;
+			targetProxy = EE838B25293D6AC40015F330 /* PBXContainerItemProxy */;
+		};
+		EE838B30293D6AC40015F330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE838B0D293D6ABD0015F330 /* tht-toktok */;
+			targetProxy = EE838B2F293D6AC40015F330 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE838B17293D6ABD0015F330 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE838B18293D6ABD0015F330 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE838B1D293D6AC30015F330 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE838B36293D6AC40015F330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE838B37293D6AC40015F330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE838B39293D6AC40015F330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tht-toktok/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktok";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE838B3A293D6AC40015F330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tht-toktok/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktok";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE838B3C293D6AC40015F330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktokTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tht-toktok.app/tht-toktok";
+			};
+			name = Debug;
+		};
+		EE838B3D293D6AC40015F330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktokTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tht-toktok.app/tht-toktok";
+			};
+			name = Release;
+		};
+		EE838B3F293D6AC40015F330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktokUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tht-toktok";
+			};
+			name = Debug;
+		};
+		EE838B40293D6AC40015F330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktokUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "tht-toktok";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE838B09293D6ABD0015F330 /* Build configuration list for PBXProject "tht-toktok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE838B36293D6AC40015F330 /* Debug */,
+				EE838B37293D6AC40015F330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE838B38293D6AC40015F330 /* Build configuration list for PBXNativeTarget "tht-toktok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE838B39293D6AC40015F330 /* Debug */,
+				EE838B3A293D6AC40015F330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE838B3B293D6AC40015F330 /* Build configuration list for PBXNativeTarget "tht-toktokTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE838B3C293D6AC40015F330 /* Debug */,
+				EE838B3D293D6AC40015F330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE838B3E293D6AC40015F330 /* Build configuration list for PBXNativeTarget "tht-toktokUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE838B3F293D6AC40015F330 /* Debug */,
+				EE838B40293D6AC40015F330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE838B06293D6ABD0015F330 /* Project object */;
+}
