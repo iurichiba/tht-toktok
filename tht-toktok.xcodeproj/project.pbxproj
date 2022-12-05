@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5BBC23293D79C2004F5A4B /* ClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC22293D79C2004F5A4B /* ClientProtocol.swift */; };
+		EE5BBC25293D7A0A004F5A4B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC24293D7A0A004F5A4B /* HTTPClient.swift */; };
+		EE5BBC27293D7A44004F5A4B /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC26293D7A44004F5A4B /* JSONHelper.swift */; };
+		EE5BBC2E293D7C17004F5A4B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC2D293D7C17004F5A4B /* FeedItem.swift */; };
+		EE5BBC30293D7C50004F5A4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC2F293D7C50004F5A4B /* User.swift */; };
+		EE5BBC33293D7CC7004F5A4B /* FeedEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC32293D7CC7004F5A4B /* FeedEndpoints.swift */; };
+		EE5BBC35293D7CDD004F5A4B /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC34293D7CDD004F5A4B /* FeedService.swift */; };
+		EE5BBC37293D88E2004F5A4B /* feed-preview.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5BBC36293D88E2004F5A4B /* feed-preview.json */; };
 		EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B11293D6ABD0015F330 /* AppDelegate.swift */; };
 		EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B13293D6ABD0015F330 /* SceneDelegate.swift */; };
 		EE838B16293D6ABD0015F330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B15293D6ABD0015F330 /* ViewController.swift */; };
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE5BBC22293D79C2004F5A4B /* ClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientProtocol.swift; sourceTree = "<group>"; };
+		EE5BBC24293D7A0A004F5A4B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EE5BBC26293D7A44004F5A4B /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		EE5BBC2D293D7C17004F5A4B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		EE5BBC2F293D7C50004F5A4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE5BBC32293D7CC7004F5A4B /* FeedEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoints.swift; sourceTree = "<group>"; };
+		EE5BBC34293D7CDD004F5A4B /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		EE5BBC36293D88E2004F5A4B /* feed-preview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "feed-preview.json"; sourceTree = "<group>"; };
 		EE838B0E293D6ABD0015F330 /* tht-toktok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tht-toktok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE838B11293D6ABD0015F330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE838B13293D6ABD0015F330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +95,7 @@
 		EE5BBC1D293D6DA9004F5A4B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC26293D7A44004F5A4B /* JSONHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -86,6 +103,8 @@
 		EE5BBC1E293D6DAE004F5A4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC2D293D7C17004F5A4B /* FeedItem.swift */,
+				EE5BBC2F293D7C50004F5A4B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,8 +112,28 @@
 		EE5BBC1F293D6EE5004F5A4B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC21293D79B0004F5A4B /* Client */,
+				EE5BBC31293D7CBA004F5A4B /* Configuration */,
+				EE5BBC34293D7CDD004F5A4B /* FeedService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		EE5BBC21293D79B0004F5A4B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC22293D79C2004F5A4B /* ClientProtocol.swift */,
+				EE5BBC24293D7A0A004F5A4B /* HTTPClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		EE5BBC31293D7CBA004F5A4B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC32293D7CC7004F5A4B /* FeedEndpoints.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		EE838B05293D6ABD0015F330 = {
@@ -187,6 +226,7 @@
 		EE838B46293D6BAD0015F330 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC36293D88E2004F5A4B /* feed-preview.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -295,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5BBC37293D88E2004F5A4B /* feed-preview.json in Resources */,
 				EE838B1E293D6AC30015F330 /* LaunchScreen.storyboard in Resources */,
 				EE838B1B293D6AC30015F330 /* Assets.xcassets in Resources */,
 				EE838B19293D6ABD0015F330 /* Main.storyboard in Resources */,
@@ -322,9 +363,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5BBC23293D79C2004F5A4B /* ClientProtocol.swift in Sources */,
+				EE5BBC25293D7A0A004F5A4B /* HTTPClient.swift in Sources */,
 				EE838B16293D6ABD0015F330 /* ViewController.swift in Sources */,
+				EE5BBC33293D7CC7004F5A4B /* FeedEndpoints.swift in Sources */,
+				EE5BBC2E293D7C17004F5A4B /* FeedItem.swift in Sources */,
+				EE5BBC30293D7C50004F5A4B /* User.swift in Sources */,
+				EE5BBC27293D7A44004F5A4B /* JSONHelper.swift in Sources */,
 				EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */,
 				EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */,
+				EE5BBC35293D7CDD004F5A4B /* FeedService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
