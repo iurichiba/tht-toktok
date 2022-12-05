@@ -76,6 +76,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE5BBC1D293D6DA9004F5A4B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EE5BBC1E293D6DAE004F5A4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE5BBC1F293D6EE5004F5A4B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		EE838B05293D6ABD0015F330 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +120,11 @@
 		EE838B10293D6ABD0015F330 /* tht-toktok */ = {
 			isa = PBXGroup;
 			children = (
-				EE838B11293D6ABD0015F330 /* AppDelegate.swift */,
-				EE838B13293D6ABD0015F330 /* SceneDelegate.swift */,
-				EE838B15293D6ABD0015F330 /* ViewController.swift */,
-				EE838B17293D6ABD0015F330 /* Main.storyboard */,
+				EE838B46293D6BAD0015F330 /* Preview Content */,
+				EE838B42293D6B140015F330 /* Main Application */,
+				EE838B44293D6B3F0015F330 /* Shared */,
+				EE838B43293D6B370015F330 /* Features */,
 				EE838B1A293D6AC30015F330 /* Assets.xcassets */,
-				EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */,
-				EE838B1F293D6AC30015F330 /* Info.plist */,
 			);
 			path = "tht-toktok";
 			sourceTree = "<group>";
@@ -125,6 +144,51 @@
 				EE838B34293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift */,
 			);
 			path = "tht-toktokUITests";
+			sourceTree = "<group>";
+		};
+		EE838B42293D6B140015F330 /* Main Application */ = {
+			isa = PBXGroup;
+			children = (
+				EE838B1F293D6AC30015F330 /* Info.plist */,
+				EE838B11293D6ABD0015F330 /* AppDelegate.swift */,
+				EE838B13293D6ABD0015F330 /* SceneDelegate.swift */,
+				EE838B15293D6ABD0015F330 /* ViewController.swift */,
+				EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */,
+				EE838B17293D6ABD0015F330 /* Main.storyboard */,
+			);
+			path = "Main Application";
+			sourceTree = "<group>";
+		};
+		EE838B43293D6B370015F330 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EE838B45293D6B850015F330 /* Feed */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EE838B44293D6B3F0015F330 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC1D293D6DA9004F5A4B /* Helpers */,
+				EE5BBC1E293D6DAE004F5A4B /* Models */,
+				EE5BBC1F293D6EE5004F5A4B /* Service */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EE838B45293D6B850015F330 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		EE838B46293D6BAD0015F330 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,10 +502,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "tht-toktok/Info.plist";
+				INFOPLIST_FILE = "tht-toktok/Main Application/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Toktok;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,10 +531,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "tht-toktok/Info.plist";
+				INFOPLIST_FILE = "tht-toktok/Main Application/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Toktok;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +548,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
