@@ -26,6 +26,7 @@ class FeedTableView: UITableView {
         self.backgroundColor = .black
         self.separatorStyle = .none
         self.showsVerticalScrollIndicator = false
+        self.contentInsetAdjustmentBehavior = .never
         self.isPagingEnabled = true // snapping behaviour
     }
     

@@ -13,6 +13,10 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-Dm-aUa" customClass="LoopingPlayerView" customModule="tht_toktok" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-g8-zZ2" userLabel="Info Box">
                     <rect key="frame" x="32" y="705.5" width="350" height="108.5"/>
                     <subviews>
@@ -45,11 +49,16 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Bw-Dm-aUa" secondAttribute="trailing" id="3vy-3T-mKc"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fc6-g8-zZ2" secondAttribute="bottom" constant="48" id="4OU-ve-YE8"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fc6-g8-zZ2" secondAttribute="trailing" constant="32" id="4Pc-0q-meq"/>
+                <constraint firstItem="1Bw-Dm-aUa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5po-5C-M2s"/>
                 <constraint firstItem="fc6-g8-zZ2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="bMR-hi-4nR"/>
+                <constraint firstItem="1Bw-Dm-aUa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="plU-CQ-S1N"/>
+                <constraint firstAttribute="bottom" secondItem="1Bw-Dm-aUa" secondAttribute="bottom" id="vib-ID-cca"/>
             </constraints>
             <connections>
+                <outlet property="playerView" destination="1Bw-Dm-aUa" id="DBS-q7-KfU"/>
                 <outlet property="titleLabel" destination="wDa-1F-Qyh" id="M1I-8a-8vM"/>
                 <outlet property="usernameLabel" destination="f11-Hl-uMq" id="SUk-ZE-FiZ"/>
             </connections>

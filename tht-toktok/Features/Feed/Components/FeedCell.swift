@@ -11,11 +11,12 @@ class FeedCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var playerView: LoopingPlayerView!
     
     func setup(withItem item: FeedItem) {
-        print("On screen:", item.title)
         titleLabel.text = item.title
         usernameLabel.text = "@\(item.user.username)"
+        playerView.play(fromURL: item.videoUrl)
     }
     
 }

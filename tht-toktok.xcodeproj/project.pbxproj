@@ -20,6 +20,7 @@
 		EE5BBC3D293D9E6B004F5A4B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC3C293D9E6B004F5A4B /* FeedCell.swift */; };
 		EE5BBC3F293D9E75004F5A4B /* FeedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC3E293D9E75004F5A4B /* FeedTableView.swift */; };
 		EE5BBC42293D9E90004F5A4B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5BBC41293D9E90004F5A4B /* FeedCell.xib */; };
+		EE5BBC44293DAC5F004F5A4B /* LoopingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC43293DAC5F004F5A4B /* LoopingPlayer.swift */; };
 		EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B11293D6ABD0015F330 /* AppDelegate.swift */; };
 		EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B13293D6ABD0015F330 /* SceneDelegate.swift */; };
 		EE838B19293D6ABD0015F330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE838B17293D6ABD0015F330 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		EE5BBC3C293D9E6B004F5A4B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		EE5BBC3E293D9E75004F5A4B /* FeedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableView.swift; sourceTree = "<group>"; };
 		EE5BBC41293D9E90004F5A4B /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		EE5BBC43293DAC5F004F5A4B /* LoopingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingPlayer.swift; sourceTree = "<group>"; };
 		EE838B0E293D6ABD0015F330 /* tht-toktok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tht-toktok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE838B11293D6ABD0015F330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE838B13293D6ABD0015F330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,13 +146,14 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		EE5BBC40293D9E7C004F5A4B /* Items */ = {
+		EE5BBC40293D9E7C004F5A4B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC43293DAC5F004F5A4B /* LoopingPlayer.swift */,
 				EE5BBC3C293D9E6B004F5A4B /* FeedCell.swift */,
 				EE5BBC41293D9E90004F5A4B /* FeedCell.xib */,
 			);
-			path = Items;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EE838B05293D6ABD0015F330 = {
@@ -235,7 +238,7 @@
 		EE838B45293D6B850015F330 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				EE5BBC40293D9E7C004F5A4B /* Items */,
+				EE5BBC40293D9E7C004F5A4B /* Components */,
 				EE5BBC38293D92D5004F5A4B /* FeedViewController.swift */,
 				EE5BBC3A293D92DF004F5A4B /* FeedViewModel.swift */,
 				EE5BBC3E293D9E75004F5A4B /* FeedTableView.swift */,
@@ -397,6 +400,7 @@
 				EE5BBC3F293D9E75004F5A4B /* FeedTableView.swift in Sources */,
 				EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */,
 				EE5BBC35293D7CDD004F5A4B /* FeedService.swift in Sources */,
+				EE5BBC44293DAC5F004F5A4B /* LoopingPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
