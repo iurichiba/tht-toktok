@@ -31,3 +31,10 @@ final class FeedService: FeedServiceProtocol {
     }
 }
 
+// MARK: - Mock Implementation
+final class MockFeedService: FeedServiceProtocol {
+    func getFeed(completion: @escaping (Result<[FeedItem], Error>) -> Void) {
+        let feed = try! JSONHelper().decodeFromFile("feed-preview", type: [FeedItem].self)
+        completion(.success(feed))
+    }
+}
