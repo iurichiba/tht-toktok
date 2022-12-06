@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5BBC23293D79C2004F5A4B /* ClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC22293D79C2004F5A4B /* ClientProtocol.swift */; };
+		EE5BBC25293D7A0A004F5A4B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC24293D7A0A004F5A4B /* HTTPClient.swift */; };
+		EE5BBC27293D7A44004F5A4B /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC26293D7A44004F5A4B /* JSONHelper.swift */; };
+		EE5BBC2E293D7C17004F5A4B /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC2D293D7C17004F5A4B /* FeedItem.swift */; };
+		EE5BBC30293D7C50004F5A4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC2F293D7C50004F5A4B /* User.swift */; };
+		EE5BBC33293D7CC7004F5A4B /* FeedEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC32293D7CC7004F5A4B /* FeedEndpoints.swift */; };
+		EE5BBC35293D7CDD004F5A4B /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC34293D7CDD004F5A4B /* FeedService.swift */; };
+		EE5BBC37293D88E2004F5A4B /* feed-preview.json in Resources */ = {isa = PBXBuildFile; fileRef = EE5BBC36293D88E2004F5A4B /* feed-preview.json */; };
+		EE5BBC39293D92D5004F5A4B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC38293D92D5004F5A4B /* FeedViewController.swift */; };
+		EE5BBC3B293D92DF004F5A4B /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC3A293D92DF004F5A4B /* FeedViewModel.swift */; };
+		EE5BBC3D293D9E6B004F5A4B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC3C293D9E6B004F5A4B /* FeedCell.swift */; };
+		EE5BBC3F293D9E75004F5A4B /* FeedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC3E293D9E75004F5A4B /* FeedTableView.swift */; };
+		EE5BBC42293D9E90004F5A4B /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5BBC41293D9E90004F5A4B /* FeedCell.xib */; };
+		EE5BBC44293DAC5F004F5A4B /* LoopingPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BBC43293DAC5F004F5A4B /* LoopingPlayer.swift */; };
 		EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B11293D6ABD0015F330 /* AppDelegate.swift */; };
 		EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B13293D6ABD0015F330 /* SceneDelegate.swift */; };
-		EE838B16293D6ABD0015F330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B15293D6ABD0015F330 /* ViewController.swift */; };
 		EE838B19293D6ABD0015F330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE838B17293D6ABD0015F330 /* Main.storyboard */; };
 		EE838B1B293D6AC30015F330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE838B1A293D6AC30015F330 /* Assets.xcassets */; };
 		EE838B1E293D6AC30015F330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */; };
 		EE838B29293D6AC40015F330 /* tht_toktokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B28293D6AC40015F330 /* tht_toktokTests.swift */; };
 		EE838B33293D6AC40015F330 /* tht_toktokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B32293D6AC40015F330 /* tht_toktokUITests.swift */; };
 		EE838B35293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE838B34293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift */; };
+		EE9178E9293E9A0300BAF63B /* UIViewCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178E8293E9A0300BAF63B /* UIViewCustomized.swift */; };
+		EE9178EE293E9EC800BAF63B /* FeedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178ED293E9EC800BAF63B /* FeedAction.swift */; };
+		EE9178F0293EB01800BAF63B /* UIImageCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178EF293EB01800BAF63B /* UIImageCustomized.swift */; };
+		EE9178F2293EB1A400BAF63B /* UILabelCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178F1293EB1A400BAF63B /* UILabelCustomized.swift */; };
+		EE9178F5293ECD0200BAF63B /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178F4293ECD0200BAF63B /* UIImageView+URL.swift */; };
+		EE9178FA293EEA8A00BAF63B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178F9293EEA8A00BAF63B /* AppConfiguration.swift */; };
+		EE9178FD293EEB9500BAF63B /* FullScreenLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178FC293EEB9500BAF63B /* FullScreenLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +56,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE5BBC22293D79C2004F5A4B /* ClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientProtocol.swift; sourceTree = "<group>"; };
+		EE5BBC24293D7A0A004F5A4B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EE5BBC26293D7A44004F5A4B /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		EE5BBC2D293D7C17004F5A4B /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		EE5BBC2F293D7C50004F5A4B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EE5BBC32293D7CC7004F5A4B /* FeedEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoints.swift; sourceTree = "<group>"; };
+		EE5BBC34293D7CDD004F5A4B /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		EE5BBC36293D88E2004F5A4B /* feed-preview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "feed-preview.json"; sourceTree = "<group>"; };
+		EE5BBC38293D92D5004F5A4B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EE5BBC3A293D92DF004F5A4B /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		EE5BBC3C293D9E6B004F5A4B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EE5BBC3E293D9E75004F5A4B /* FeedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableView.swift; sourceTree = "<group>"; };
+		EE5BBC41293D9E90004F5A4B /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		EE5BBC43293DAC5F004F5A4B /* LoopingPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingPlayer.swift; sourceTree = "<group>"; };
 		EE838B0E293D6ABD0015F330 /* tht-toktok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tht-toktok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE838B11293D6ABD0015F330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE838B13293D6ABD0015F330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE838B15293D6ABD0015F330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE838B18293D6ABD0015F330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE838B1A293D6AC30015F330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE838B1D293D6AC30015F330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +82,14 @@
 		EE838B2E293D6AC40015F330 /* tht-toktokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tht-toktokUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE838B32293D6AC40015F330 /* tht_toktokUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tht_toktokUITests.swift; sourceTree = "<group>"; };
 		EE838B34293D6AC40015F330 /* tht_toktokUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tht_toktokUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE9178E8293E9A0300BAF63B /* UIViewCustomized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCustomized.swift; sourceTree = "<group>"; };
+		EE9178ED293E9EC800BAF63B /* FeedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAction.swift; sourceTree = "<group>"; };
+		EE9178EF293EB01800BAF63B /* UIImageCustomized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageCustomized.swift; sourceTree = "<group>"; };
+		EE9178F1293EB1A400BAF63B /* UILabelCustomized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelCustomized.swift; sourceTree = "<group>"; };
+		EE9178F4293ECD0200BAF63B /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		EE9178F6293ED21D00BAF63B /* Dev Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Dev Assets.xcassets"; sourceTree = "<group>"; };
+		EE9178F9293EEA8A00BAF63B /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		EE9178FC293EEB9500BAF63B /* FullScreenLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +120,7 @@
 		EE5BBC1D293D6DA9004F5A4B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC26293D7A44004F5A4B /* JSONHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -86,6 +128,8 @@
 		EE5BBC1E293D6DAE004F5A4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC2D293D7C17004F5A4B /* FeedItem.swift */,
+				EE5BBC2F293D7C50004F5A4B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,8 +137,38 @@
 		EE5BBC1F293D6EE5004F5A4B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC21293D79B0004F5A4B /* Client */,
+				EE5BBC31293D7CBA004F5A4B /* Configuration */,
+				EE5BBC34293D7CDD004F5A4B /* FeedService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		EE5BBC21293D79B0004F5A4B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC22293D79C2004F5A4B /* ClientProtocol.swift */,
+				EE5BBC24293D7A0A004F5A4B /* HTTPClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		EE5BBC31293D7CBA004F5A4B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC32293D7CC7004F5A4B /* FeedEndpoints.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EE5BBC40293D9E7C004F5A4B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE9178EB293E9E9900BAF63B /* LoopingPlayer */,
+				EE9178EC293E9EA500BAF63B /* FeedAction */,
+				EE9178EA293E9E8900BAF63B /* FeedCell */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EE838B05293D6ABD0015F330 = {
@@ -125,6 +199,7 @@
 				EE838B44293D6B3F0015F330 /* Shared */,
 				EE838B43293D6B370015F330 /* Features */,
 				EE838B1A293D6AC30015F330 /* Assets.xcassets */,
+				EE9178F6293ED21D00BAF63B /* Dev Assets.xcassets */,
 			);
 			path = "tht-toktok";
 			sourceTree = "<group>";
@@ -150,9 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				EE838B1F293D6AC30015F330 /* Info.plist */,
+				EE9178F9293EEA8A00BAF63B /* AppConfiguration.swift */,
 				EE838B11293D6ABD0015F330 /* AppDelegate.swift */,
 				EE838B13293D6ABD0015F330 /* SceneDelegate.swift */,
-				EE838B15293D6ABD0015F330 /* ViewController.swift */,
 				EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */,
 				EE838B17293D6ABD0015F330 /* Main.storyboard */,
 			);
@@ -170,6 +245,9 @@
 		EE838B44293D6B3F0015F330 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EE9178E7293E99EE00BAF63B /* IBDesignables */,
+				EE9178FB293EEB8700BAF63B /* Components */,
+				EE9178F3293ECCEC00BAF63B /* Extensions */,
 				EE5BBC1D293D6DA9004F5A4B /* Helpers */,
 				EE5BBC1E293D6DAE004F5A4B /* Models */,
 				EE5BBC1F293D6EE5004F5A4B /* Service */,
@@ -180,6 +258,10 @@
 		EE838B45293D6B850015F330 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC40293D9E7C004F5A4B /* Components */,
+				EE5BBC38293D92D5004F5A4B /* FeedViewController.swift */,
+				EE5BBC3A293D92DF004F5A4B /* FeedViewModel.swift */,
+				EE5BBC3E293D9E75004F5A4B /* FeedTableView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -187,8 +269,60 @@
 		EE838B46293D6BAD0015F330 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				EE5BBC36293D88E2004F5A4B /* feed-preview.json */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE9178E7293E99EE00BAF63B /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				EE9178E8293E9A0300BAF63B /* UIViewCustomized.swift */,
+				EE9178EF293EB01800BAF63B /* UIImageCustomized.swift */,
+				EE9178F1293EB1A400BAF63B /* UILabelCustomized.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		EE9178EA293E9E8900BAF63B /* FeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC3C293D9E6B004F5A4B /* FeedCell.swift */,
+				EE5BBC41293D9E90004F5A4B /* FeedCell.xib */,
+			);
+			path = FeedCell;
+			sourceTree = "<group>";
+		};
+		EE9178EB293E9E9900BAF63B /* LoopingPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EE5BBC43293DAC5F004F5A4B /* LoopingPlayer.swift */,
+			);
+			path = LoopingPlayer;
+			sourceTree = "<group>";
+		};
+		EE9178EC293E9EA500BAF63B /* FeedAction */ = {
+			isa = PBXGroup;
+			children = (
+				EE9178ED293E9EC800BAF63B /* FeedAction.swift */,
+			);
+			path = FeedAction;
+			sourceTree = "<group>";
+		};
+		EE9178F3293ECCEC00BAF63B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE9178F4293ECD0200BAF63B /* UIImageView+URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE9178FB293EEB8700BAF63B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE9178FC293EEB9500BAF63B /* FullScreenLoading.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +429,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5BBC37293D88E2004F5A4B /* feed-preview.json in Resources */,
 				EE838B1E293D6AC30015F330 /* LaunchScreen.storyboard in Resources */,
 				EE838B1B293D6AC30015F330 /* Assets.xcassets in Resources */,
 				EE838B19293D6ABD0015F330 /* Main.storyboard in Resources */,
+				EE5BBC42293D9E90004F5A4B /* FeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,9 +458,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE838B16293D6ABD0015F330 /* ViewController.swift in Sources */,
+				EE5BBC23293D79C2004F5A4B /* ClientProtocol.swift in Sources */,
+				EE5BBC25293D7A0A004F5A4B /* HTTPClient.swift in Sources */,
+				EE5BBC3B293D92DF004F5A4B /* FeedViewModel.swift in Sources */,
+				EE5BBC33293D7CC7004F5A4B /* FeedEndpoints.swift in Sources */,
+				EE5BBC2E293D7C17004F5A4B /* FeedItem.swift in Sources */,
+				EE5BBC3D293D9E6B004F5A4B /* FeedCell.swift in Sources */,
+				EE9178FA293EEA8A00BAF63B /* AppConfiguration.swift in Sources */,
+				EE9178F0293EB01800BAF63B /* UIImageCustomized.swift in Sources */,
+				EE5BBC30293D7C50004F5A4B /* User.swift in Sources */,
+				EE5BBC27293D7A44004F5A4B /* JSONHelper.swift in Sources */,
+				EE5BBC39293D92D5004F5A4B /* FeedViewController.swift in Sources */,
 				EE838B12293D6ABD0015F330 /* AppDelegate.swift in Sources */,
+				EE9178E9293E9A0300BAF63B /* UIViewCustomized.swift in Sources */,
+				EE5BBC3F293D9E75004F5A4B /* FeedTableView.swift in Sources */,
+				EE9178F2293EB1A400BAF63B /* UILabelCustomized.swift in Sources */,
+				EE9178FD293EEB9500BAF63B /* FullScreenLoading.swift in Sources */,
 				EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */,
+				EE9178EE293E9EC800BAF63B /* FeedAction.swift in Sources */,
+				EE5BBC35293D7CDD004F5A4B /* FeedService.swift in Sources */,
+				EE9178F5293ECD0200BAF63B /* UIImageView+URL.swift in Sources */,
+				EE5BBC44293DAC5F004F5A4B /* LoopingPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,17 +653,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tht-toktok/Main Application/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Toktok;
+				INFOPLIST_KEY_CFBundleDisplayName = TokTok;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,6 +674,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -528,17 +686,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tht-toktok/Main Application/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Toktok;
+				INFOPLIST_KEY_CFBundleDisplayName = TokTok;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +707,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "solutions.shoryuken.tht-toktok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
