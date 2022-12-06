@@ -14,15 +14,13 @@ class FeedViewController: UIViewController {
     private var feedTableView: UITableView!
     private var loadingView: FullScreenLoading!
     
-    // MARK: View Model
     private var viewModel: FeedViewModel = {
-//        return FeedViewModel(service: MockFeedService())
+        //        return FeedViewModel(service: MockFeedService())
         let client = HTTPClient(baseURL: AppConfiguration.baseUrl!, urlSession: URLSession.shared)
         let service = FeedService(client: client)
         return FeedViewModel(service: service)
     }()
     
-    // MARK: Combine Control
     var cancellables = Set<AnyCancellable>()
     
     // MARK: - Lifecycle Control
@@ -98,6 +96,5 @@ extension FeedViewController: FeedCellDelegate {
     func flameTapped(forFeedItemAt index: Int) {
         self.viewModel.flameTapped(forFeedItemAt: index)
     }
-    
     
 }

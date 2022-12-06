@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedActionView: UIControl {
+final class FeedActionView: UIControl {
     
     @IBOutlet weak var zeroCountImage: UIImageView!
     @IBOutlet weak var multiCountImage: UIImageView!
@@ -19,12 +19,14 @@ class FeedActionView: UIControl {
         }
     }
  
+    // MARK: - Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.actionCount = 0
         self.touchSetup()
     }
     
+    // MARK: - Touch Recognition
     private func touchSetup() {
         self.addTarget(self, action: #selector(onTouch), for: .touchUpInside)
     }
@@ -33,6 +35,7 @@ class FeedActionView: UIControl {
         self.actionCount += 1
     }
     
+    // MARK: - Component Animation
     private func setCount(_ newCount: Int, animated: Bool = true) {
         countLabel.text = String(newCount)
         

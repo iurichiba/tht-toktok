@@ -28,6 +28,7 @@ extension UIImageView {
         }
     }
     
+    // MARK: - Hide/Show Animation (optional)
     private func setVisibility(visible: Bool, animated: Bool = true) {
         let transform = { [weak self] in
             UIView.animate(withDuration: 0.25) {

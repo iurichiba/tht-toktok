@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedCell: UITableViewCell {
+final class FeedCell: UITableViewCell {
     
     var delegate: FeedCellDelegate?
     
@@ -21,6 +21,7 @@ class FeedCell: UITableViewCell {
     
     fileprivate var cellIndex: Int = -1
     
+    // MARK: - Initialization
     func setup(withItem item: FeedItem, index: Int) {
         cellIndex = index
         titleLabel.text = item.title
@@ -31,6 +32,7 @@ class FeedCell: UITableViewCell {
         playerView.play(fromURL: item.videoUrl, identifier: item.id)
     }
     
+    // MARK: - Actions
     @IBAction private func flameTapped(_ sender: Any) {
         delegate?.flameTapped(forFeedItemAt: cellIndex)
     }

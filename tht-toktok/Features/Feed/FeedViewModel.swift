@@ -16,12 +16,14 @@ final class FeedViewModel {
     private var service: FeedServiceProtocol
     
     @Published var state: FeedViewState = .loading
-    @Published var data = [FeedItem]()
+    var data = [FeedItem]()
     
+    // MARK: - Initialization
     init(service: FeedServiceProtocol) {
         self.service = service
     }
     
+    // MARK: - Data Fetching
     func loadFeed() {
         service.getFeed { [weak self] result in
             switch result {
@@ -34,6 +36,7 @@ final class FeedViewModel {
         }
     }
     
+    // MARK: - Actions
     func heartTapped(forFeedItemAt index: Int) {
         self.data[index].heartCount += 1
     }
