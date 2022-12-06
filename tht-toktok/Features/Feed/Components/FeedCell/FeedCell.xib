@@ -16,10 +16,10 @@
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-Dm-aUa" customClass="LoopingPlayerView" customModule="tht_toktok" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wld-Le-Ihx" userLabel="Side Bar Container">
-                    <rect key="frame" x="342" y="503.5" width="64" height="231"/>
+                    <rect key="frame" x="342" y="523.5" width="64" height="219"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xkK-fe-J5J" customClass="UIImageCustomized" customModule="tht_toktok" customModuleProvider="target">
                             <rect key="frame" x="8" y="0.0" width="48" height="48"/>
@@ -125,7 +125,7 @@
                             </connections>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJ1-N5-8xo" userLabel="Heart Action" customClass="FeedActionView" customModule="tht_toktok" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="147.5" width="64" height="83.5"/>
+                            <rect key="frame" x="0.0" y="135.5" width="64" height="83.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0ys-Nh-e0h">
                                     <rect key="frame" x="16" y="17.5" width="32" height="29.5"/>
@@ -203,7 +203,7 @@
                         <constraint firstItem="23a-vh-VGd" firstAttribute="leading" secondItem="Wld-Le-Ihx" secondAttribute="leading" id="0RY-53-cMe"/>
                         <constraint firstAttribute="trailing" secondItem="xkK-fe-J5J" secondAttribute="trailing" constant="8" id="M1i-6K-9Zg"/>
                         <constraint firstItem="23a-vh-VGd" firstAttribute="top" secondItem="xkK-fe-J5J" secondAttribute="bottom" constant="16" id="NaP-6k-3iK"/>
-                        <constraint firstItem="cJ1-N5-8xo" firstAttribute="top" secondItem="23a-vh-VGd" secondAttribute="bottom" id="NdF-9r-hpo"/>
+                        <constraint firstItem="cJ1-N5-8xo" firstAttribute="top" secondItem="23a-vh-VGd" secondAttribute="bottom" constant="-12" id="NdF-9r-hpo"/>
                         <constraint firstAttribute="bottom" secondItem="cJ1-N5-8xo" secondAttribute="bottom" id="ckg-iI-wqe"/>
                         <constraint firstItem="cJ1-N5-8xo" firstAttribute="leading" secondItem="Wld-Le-Ihx" secondAttribute="leading" id="i9k-Yn-aGz"/>
                         <constraint firstAttribute="trailing" secondItem="cJ1-N5-8xo" secondAttribute="trailing" id="jka-OY-KyM"/>
@@ -213,10 +213,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPG-B2-nmE" userLabel="Bottom Container" customClass="UIViewCustomized" customModule="tht_toktok" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="750.5" width="414" height="145.5"/>
+                    <rect key="frame" x="0.0" y="742.5" width="414" height="153.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-g8-zZ2" userLabel="Info Box">
-                            <rect key="frame" x="24" y="24" width="366" height="89.5"/>
+                            <rect key="frame" x="24" y="32" width="366" height="89.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f11-Hl-uMq">
                                     <rect key="frame" x="0.0" y="0.0" width="366" height="24"/>
@@ -249,7 +249,7 @@
                         <constraint firstAttribute="bottom" secondItem="fc6-g8-zZ2" secondAttribute="bottom" constant="32" id="UyK-wb-Pmk"/>
                         <constraint firstAttribute="trailing" secondItem="fc6-g8-zZ2" secondAttribute="trailing" constant="24" id="amR-wO-Cc7"/>
                         <constraint firstItem="fc6-g8-zZ2" firstAttribute="leading" secondItem="jPG-B2-nmE" secondAttribute="leading" constant="24" id="bTe-5w-f9y"/>
-                        <constraint firstItem="fc6-g8-zZ2" firstAttribute="top" secondItem="jPG-B2-nmE" secondAttribute="top" constant="24" id="jFG-5C-Q6o"/>
+                        <constraint firstItem="fc6-g8-zZ2" firstAttribute="top" secondItem="jPG-B2-nmE" secondAttribute="top" constant="32" id="jFG-5C-Q6o"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="bottomGradient">
@@ -269,7 +269,7 @@
                 <constraint firstAttribute="trailing" secondItem="jPG-B2-nmE" secondAttribute="trailing" id="60d-o3-c4W"/>
                 <constraint firstAttribute="bottom" secondItem="jPG-B2-nmE" secondAttribute="bottom" id="7AM-3C-OUN"/>
                 <constraint firstItem="jPG-B2-nmE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FPS-mW-tTX"/>
-                <constraint firstItem="jPG-B2-nmE" firstAttribute="top" secondItem="Wld-Le-Ihx" secondAttribute="bottom" constant="16" id="T1N-LZ-LhR"/>
+                <constraint firstItem="jPG-B2-nmE" firstAttribute="top" secondItem="Wld-Le-Ihx" secondAttribute="bottom" id="T1N-LZ-LhR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wld-Le-Ihx" secondAttribute="trailing" constant="8" id="eKY-vC-pnW"/>
                 <constraint firstItem="1Bw-Dm-aUa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="plU-CQ-S1N"/>
                 <constraint firstAttribute="bottom" secondItem="1Bw-Dm-aUa" secondAttribute="bottom" id="vib-ID-cca"/>
@@ -302,9 +302,6 @@
         <image name="flame.fill" catalog="system" width="108" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

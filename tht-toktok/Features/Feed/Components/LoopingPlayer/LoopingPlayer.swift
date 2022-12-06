@@ -43,3 +43,22 @@ final class LoopingPlayerView: UIView {
     }
     
 }
+
+// MARK: - IBDesignable Resources
+@IBDesignable
+extension LoopingPlayerView {
+    
+    override func prepareForInterfaceBuilder() {
+        self.addBackgroundPlaceholder()
+    }
+    
+    private func addBackgroundPlaceholder() {
+        let dynamicBundle = Bundle(for: type(of: self))
+        let image = UIImage(named: "video-snapshot", in: dynamicBundle, compatibleWith: nil)
+        let imageView = UIImageView(image: image)
+        imageView.frame = CGRect(origin: .zero, size: self.frame.size)
+        imageView.contentMode = .scaleAspectFill
+        self.addSubview(imageView)
+    }
+    
+}
