@@ -10,7 +10,7 @@ import UIKit
 final class FullScreenLoading: UIView {
     
     private let activityIndicator: UIActivityIndicatorView = {
-        let indicator = UIActivityIndicatorView(style: .large)
+        let indicator = UIActivityIndicatorView(style: .medium)
         indicator.tintColor = .white
         return indicator
     }()
@@ -45,12 +45,12 @@ final class FullScreenLoading: UIView {
     // MARK: - Animation
     private func openCurtains(animated: Bool = true) {
         let runAnimations = {
-            UIView.animate(withDuration: 0.5) {
+            UIView.animate(withDuration: 0.75) {
                 self.activityIndicator.alpha = 0
                 self.activityIndicator.transform = .init(scaleX: 0.1, y: 0.1)
             }
 
-            UIView.animate(withDuration: 1.25) {
+            UIView.animate(withDuration: 1.75) {
                 self.alpha = 0
             } completion: { _ in
                 self.removeFromSuperview()
