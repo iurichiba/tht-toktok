@@ -34,6 +34,8 @@
 		EE9178F0293EB01800BAF63B /* UIImageCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178EF293EB01800BAF63B /* UIImageCustomized.swift */; };
 		EE9178F2293EB1A400BAF63B /* UILabelCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178F1293EB1A400BAF63B /* UILabelCustomized.swift */; };
 		EE9178F5293ECD0200BAF63B /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178F4293ECD0200BAF63B /* UIImageView+URL.swift */; };
+		EE9178FA293EEA8A00BAF63B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178F9293EEA8A00BAF63B /* AppConfiguration.swift */; };
+		EE9178FD293EEB9500BAF63B /* FullScreenLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9178FC293EEB9500BAF63B /* FullScreenLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		EE9178F1293EB1A400BAF63B /* UILabelCustomized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelCustomized.swift; sourceTree = "<group>"; };
 		EE9178F4293ECD0200BAF63B /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		EE9178F6293ED21D00BAF63B /* Dev Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Dev Assets.xcassets"; sourceTree = "<group>"; };
+		EE9178F9293EEA8A00BAF63B /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		EE9178FC293EEB9500BAF63B /* FullScreenLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				EE838B1F293D6AC30015F330 /* Info.plist */,
+				EE9178F9293EEA8A00BAF63B /* AppConfiguration.swift */,
 				EE838B11293D6ABD0015F330 /* AppDelegate.swift */,
 				EE838B13293D6ABD0015F330 /* SceneDelegate.swift */,
 				EE838B1C293D6AC30015F330 /* LaunchScreen.storyboard */,
@@ -241,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				EE9178E7293E99EE00BAF63B /* IBDesignables */,
+				EE9178FB293EEB8700BAF63B /* Components */,
 				EE9178F3293ECCEC00BAF63B /* Extensions */,
 				EE5BBC1D293D6DA9004F5A4B /* Helpers */,
 				EE5BBC1E293D6DAE004F5A4B /* Models */,
@@ -309,6 +315,14 @@
 				EE9178F4293ECD0200BAF63B /* UIImageView+URL.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE9178FB293EEB8700BAF63B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE9178FC293EEB9500BAF63B /* FullScreenLoading.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +464,7 @@
 				EE5BBC33293D7CC7004F5A4B /* FeedEndpoints.swift in Sources */,
 				EE5BBC2E293D7C17004F5A4B /* FeedItem.swift in Sources */,
 				EE5BBC3D293D9E6B004F5A4B /* FeedCell.swift in Sources */,
+				EE9178FA293EEA8A00BAF63B /* AppConfiguration.swift in Sources */,
 				EE9178F0293EB01800BAF63B /* UIImageCustomized.swift in Sources */,
 				EE5BBC30293D7C50004F5A4B /* User.swift in Sources */,
 				EE5BBC27293D7A44004F5A4B /* JSONHelper.swift in Sources */,
@@ -458,6 +473,7 @@
 				EE9178E9293E9A0300BAF63B /* UIViewCustomized.swift in Sources */,
 				EE5BBC3F293D9E75004F5A4B /* FeedTableView.swift in Sources */,
 				EE9178F2293EB1A400BAF63B /* UILabelCustomized.swift in Sources */,
+				EE9178FD293EEB9500BAF63B /* FullScreenLoading.swift in Sources */,
 				EE838B14293D6ABD0015F330 /* SceneDelegate.swift in Sources */,
 				EE9178EE293E9EC800BAF63B /* FeedAction.swift in Sources */,
 				EE5BBC35293D7CDD004F5A4B /* FeedService.swift in Sources */,

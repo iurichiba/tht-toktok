@@ -12,10 +12,14 @@ class FeedViewController: UIViewController {
     
     // MARK: - Outlets and Variables
     private var feedTableView: UITableView!
+    private var loadingView: FullScreenLoading!
     
     // MARK: View Model
     private var viewModel: FeedViewModel = {
-        return FeedViewModel(service: MockFeedService())
+//        return FeedViewModel(service: MockFeedService())
+        let client = HTTPClient(baseURL: AppConfiguration.baseUrl!, urlSession: URLSession.shared)
+        let service = FeedService(client: client)
+        return FeedViewModel(service: service)
     }()
     
     // MARK: Combine Control
@@ -36,12 +40,20 @@ class FeedViewController: UIViewController {
             .sink { [weak self] state in
                 switch state {
                 case .loading:
-                    // TODO: downloading feed, show loading indicator
+                    self?.loadingSetup()
                     return
                 case .feed:
-                    self?.feedTableView.reloadData()
+                    DispatchQueue.main.async {
+                        self?.feedTableView.reloadData()
+                        self?.loadingView.loading = false
+                    }
                 }
             }.store(in: &cancellables)
+    }
+    
+    private func loadingSetup() {
+        loadingView = FullScreenLoading(frame: view.frame)
+        view.addSubview(loadingView)
     }
     
     private func tableViewSetup() {
