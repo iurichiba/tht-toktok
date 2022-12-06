@@ -71,7 +71,21 @@ extension FeedViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? FeedCell
         
         let item = viewModel.data[indexPath.row]
-        cell?.setup(withItem: item)
+        cell?.setup(withItem: item, index: indexPath.row)
+        cell?.delegate = self
         return cell ?? UITableViewCell()
     }
+}
+
+// MARK: - FeedCellDelegate
+extension FeedViewController: FeedCellDelegate {
+    func heartTapped(forFeedItemAt index: Int) {
+        self.viewModel.heartTapped(forFeedItemAt: index)
+    }
+    
+    func flameTapped(forFeedItemAt index: Int) {
+        self.viewModel.flameTapped(forFeedItemAt: index)
+    }
+    
+    
 }

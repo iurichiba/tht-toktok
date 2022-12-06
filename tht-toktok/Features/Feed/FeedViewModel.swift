@@ -16,7 +16,7 @@ final class FeedViewModel {
     private var service: FeedServiceProtocol
     
     @Published var state: FeedViewState = .loading
-    var data = [FeedItem]()
+    @Published var data = [FeedItem]()
     
     init(service: FeedServiceProtocol) {
         self.service = service
@@ -33,5 +33,14 @@ final class FeedViewModel {
             }
         }
     }
+    
+    func heartTapped(forFeedItemAt index: Int) {
+        self.data[index].heartCount += 1
+    }
+    
+    func flameTapped(forFeedItemAt index: Int) {
+        self.data[index].flameCount += 1
+    }
+    
 }
 

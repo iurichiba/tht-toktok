@@ -12,4 +12,11 @@ struct FeedItem: Codable {
     let title: String
     let user: User
     let videoUrl: URL
+    
+    private enum CodingKeys: String, CodingKey {
+        case id, title, user, videoUrl
+    }
+    
+    var heartCount: Int = 0
+    var flameCount: Int = 0
 }

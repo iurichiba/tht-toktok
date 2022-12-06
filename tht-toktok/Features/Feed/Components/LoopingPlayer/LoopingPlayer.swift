@@ -28,9 +28,13 @@ final class LoopingPlayerView: UIView {
     
     private var looper: AVPlayerLooper?
     
+    // MARK: Item Identifier
+    private var itemId: Int?
+    
     
     // MARK: - Actions
-    func play(fromURL url: URL) {
+    func play(fromURL url: URL, identifier: Int? = nil) {
+        guard identifier != itemId else { return }
         let playerItem = AVPlayerItem(url: url)
         
         DispatchQueue.main.async { [weak self] in

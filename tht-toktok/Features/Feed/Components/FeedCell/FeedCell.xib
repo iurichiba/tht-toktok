@@ -119,6 +119,7 @@
                                 <constraint firstAttribute="bottom" secondItem="kzB-33-3ty" secondAttribute="bottom" constant="16" id="wef-QF-tuZ"/>
                             </constraints>
                             <connections>
+                                <action selector="flameTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="7El-To-Xhx"/>
                                 <outlet property="countLabel" destination="kzB-33-3ty" id="3TV-yt-uSn"/>
                                 <outlet property="multiCountImage" destination="DuJ-WL-2Yw" id="No4-1S-R8R"/>
                                 <outlet property="zeroCountImage" destination="3iz-E3-LZ9" id="XxK-DT-CmD"/>
@@ -192,6 +193,7 @@
                                 <constraint firstAttribute="bottom" secondItem="A0Y-vw-taC" secondAttribute="bottom" constant="16" id="nID-Uk-cYO"/>
                             </constraints>
                             <connections>
+                                <action selector="heartTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="2NZ-0F-hUx"/>
                                 <outlet property="countLabel" destination="A0Y-vw-taC" id="cCB-gF-dWF"/>
                                 <outlet property="multiCountImage" destination="KYQ-6V-GAq" id="ZY3-cm-nGs"/>
                                 <outlet property="zeroCountImage" destination="0ys-Nh-e0h" id="tu4-OL-BBH"/>
@@ -275,6 +277,8 @@
                 <constraint firstAttribute="bottom" secondItem="1Bw-Dm-aUa" secondAttribute="bottom" id="vib-ID-cca"/>
             </constraints>
             <connections>
+                <outlet property="flameActionView" destination="23a-vh-VGd" id="LQR-Cz-UGf"/>
+                <outlet property="heartActionView" destination="cJ1-N5-8xo" id="vQY-C0-Kbs"/>
                 <outlet property="playerView" destination="1Bw-Dm-aUa" id="DBS-q7-KfU"/>
                 <outlet property="titleLabel" destination="wDa-1F-Qyh" id="M1I-8a-8vM"/>
                 <outlet property="userAvatar" destination="xkK-fe-J5J" id="V5U-jN-jaw"/>
