@@ -7,6 +7,18 @@
 
 import UIKit
 
+// MARK: - Behavior Configurations
+fileprivate struct DynamicScalingConfiguration {
+    // increases above scale 1; so if you set 0.5, it'll max out at 1.5x the size
+    let maxScaleIncrease: CGFloat
+}
+
+fileprivate struct FeedActionViewConfiguration {
+    static let dynamicScaling = DynamicScalingConfiguration(
+        maxScaleIncrease: 0.5)
+}
+
+// MARK: - Class
 final class FeedActionView: UIControl {
     
     @IBOutlet weak var zeroCountImage: UIImageView!
@@ -18,21 +30,11 @@ final class FeedActionView: UIControl {
             setCount(actionCount)
         }
     }
- 
+    
     // MARK: - Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.actionCount = 0
-        self.touchSetup()
-    }
-    
-    // MARK: - Touch Recognition
-    private func touchSetup() {
-        self.addTarget(self, action: #selector(onTouch), for: .touchUpInside)
-    }
-    
-    @objc private func onTouch() {
-        self.actionCount += 1
     }
     
     // MARK: - Component Animation
@@ -62,6 +64,34 @@ final class FeedActionView: UIControl {
                 runAnimations()
             }
         }
+    }
+    
+    // MARK: - Dynamic Scaling (visual feedback only)
+    func setDynamicScaling(byPercentage percentage: CGFloat) {
+        self.zeroCountImage.alpha = 0
+        self.multiCountImage.alpha = 1
+        let maxScaleIncrease = FeedActionViewConfiguration.dynamicScaling.maxScaleIncrease
+        let scale = 1 + (maxScaleIncrease * percentage)
+        self.multiCountImage.transform = .init(scaleX: scale, y: scale)
+    }
+    
+    func resetDynamicScaling(animated: Bool = true) {
+        let runAnimations = {
+            UIView.animate(withDuration: 0.25) {
+                let hasPositiveValue = self.actionCount > 0
+                self.zeroCountImage.alpha = hasPositiveValue ? 0 : 1
+                self.multiCountImage.alpha = hasPositiveValue ? 1 : 0
+            }
+        }
+        
+        if (animated) {
+            runAnimations()
+        } else {
+            UIView.performWithoutAnimation {
+                runAnimations()
+            }
+        }
+        
     }
     
 }
