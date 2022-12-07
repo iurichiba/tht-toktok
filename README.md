@@ -28,8 +28,6 @@ SwiftUI is something that I highly encourage, though, especially considering how
 ### 🧑‍💻 Remaining development
 
 Unfortunately, as of now, some parts of the application couldn't be developed in time:
-- The user should be able to swipe the screen to either side in order to react to videos;
-- The is rearranged to look a lot more like TikTok while the feature above isn't implemented;
 - Pagination wasn't implemented, so the application is fetching 100 items and showing them all;
 - Unit and UI tests weren't implemented.
 
@@ -43,8 +41,8 @@ System defaults were used for icons and fonts, and the logo is just TikTok's log
 First of all, whatever remains from the original scope should be developed.
 But then...
 
-- New micro-animations (probably using Lottie) to give more life to the application;
-- UI improvements, such as contextual visibility for labels and items, etc;
-- Schema and Target setup to simplify the use of mocked data vs network for testing, development and production, as well as any other different variables between environments;
+- Fail states;
+- New micro-animations (probably using Lottie);
+- Different environment configurations;
 - Automations for testing and deployment;
 - ...and a whole lot more!
